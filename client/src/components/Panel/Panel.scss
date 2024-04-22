@@ -1,0 +1,89 @@
+#Panel {
+  .topbar {
+    border-bottom: 1px solid #dfe4ea;
+    background: #fff;
+    @media (max-width: 867px) {
+      z-index: 997;
+    }
+    .name {
+      color: #111928;
+      font-size: 16px;
+      font-style: normal;
+      font-family: Roboto;
+      font-weight: 500;
+      line-height: 24px;
+      @media (max-width: 867px) {
+        font-size: 14px;
+      }
+    }
+    .role {
+      color: #637381;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      @media (max-width: 867px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.455);
+    z-index: 997;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .leftbar {
+    width: 20%;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(92, 115, 160, 0.07);
+    @media (max-width: 867px) {
+      z-index: 998;
+      padding-top: 20%;
+      width: 66%;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      @media (max-width: 867px) {
+        gap: 25px;
+      }
+      .box-current {
+        background: rgba(254, 112, 98, 0.1);
+        border-right: 3px solid var(--seconday-color, #e36863);
+      }
+      .box {
+        padding: 7px 15%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #637381;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        cursor: pointer;
+      }
+      .box-suboption{
+        cursor: pointer;
+        padding: 7px 20%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #637381;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
